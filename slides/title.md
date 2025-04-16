@@ -1,6 +1,6 @@
 <section>
 
-## A theoretical model for wave tearing by wind
+## A ~theoretical~ semi-empirical model for wave tearing by wind
 
 _Milan Curcic_
 

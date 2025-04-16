@@ -106,6 +106,28 @@ liquid surface.""
 <div class="reference"><a href="https://doi.org/10.1029/2020GL087647">Curcic & Haus (2020, GRL)</a></div>
 </section>
 
+
+<section>
+
+### Volume-of-fluid multiphase simulations and high-speed photography reveal spume generation by wind
+
+<div style="display: flex; justify-content: space-between;">
+  
+  <div style="flex: 1;">
+    <img src="assets/Soloviev_etal_2012_JGR_Fig07.png" width="450">
+    <a href="https://doi.org/10.1029/2011JC007760" style="font-size: 0.5em;">Soloviev et al. (2012, JGR)</a>
+  </div>
+  
+  <div style="flex: 1;">
+    <img src="assets/Veron_etal_2012_GRL_Fig02.png" width="300">
+    <a href="https://doi.org/10.1029/2012GL052603" style="font-size: 0.5em;">Veron et al. (2012, GRL)</a>
+  </div>
+
+</div>
+
+</section>
+
+
 <section>
 
 ### Some indirect evidence of wave tearing from the laboratory
@@ -126,29 +148,8 @@ liquid surface.""
   </div>
 
 </div>
-
 </section>
 
-
-<section>
-
-### High-speed photography by Veron et al. (2012) reveals spume generation by wind
-
-<div style="display: flex; justify-content: space-between;">
-  
-  <div style="flex: 1;">
-    <ul style="font-size: 0.9em;">
-    </ul>
-  </div>
-  
-  <div style="flex: 1;">
-    <img src="assets/Veron_etal_2012_GRL_Fig02.png" width="350">
-  </div>
-
-</div>
-
-<div class="reference"><a href="https://doi.org/10.1029/2012GL052603">Veron et al. (2012, GRL)</a></div>
-</section>
 
 <section>
 
@@ -175,5 +176,5 @@ liquid surface.""
 
 <section>
 
-## Can we formulate a theoretical or empirical model for wave tearing?
+## Can we formulate a theoretical or semi-empirical model for wave tearing?
 </section>

@@ -128,8 +128,6 @@ liquid surface.""
 </section>
 
 
-
-
 <section>
 
 ### Some indirect evidence of wave tearing from the laboratory

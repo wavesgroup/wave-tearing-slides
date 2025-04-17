@@ -140,7 +140,7 @@ E_s = \sigma \Delta A_s
 $$
 
 In the simplest approach, assume that all torn volume $V_t$
-converts to spume with a uniform radius distribution, _i.e._ $N$ droplets of radius $r$:
+converts to spume composed of $N$ droplets of constant radius $r$:
 
 $$
 E_s = \sigma N 4 \pi r^2

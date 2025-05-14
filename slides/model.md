@@ -1,6 +1,6 @@
 <section>
 
-## A theoretical model for wave tearing by wind
+## A criterion for wave tearing by wind
 </section>
 
 
@@ -14,13 +14,13 @@ The model should then be designed to be, in the first iteration:
 1. **Simple** - transparent and from first principles
 2. **Useful** - qualitatively predicts observed behavior
 
-If we can accomplish these two goals, we can later pursue more complexity for better accuracy.
+If we can first accomplish these two goals, we can later pursue more complexity for higher accuracy.
 </section>
 
 
 <section>
 
-## 1. Wind blows over a linear (sine) wave that propagates in the same direction
+## 1. Wind blows over a wave that propagates in the same direction
 
 <img src="assets/diagram1.svg" width="800"></img>
 </section>
@@ -29,7 +29,7 @@ If we can accomplish these two goals, we can later pursue more complexity for be
 
 <section>
 
-## 2. Wind blows off the top of the wave crest as spume
+## 2. Wind tears the top of the wave crest off, creating spume
 
 <img src="assets/diagram2.svg" width="800"></img>
 </section>
@@ -37,7 +37,7 @@ If we can accomplish these two goals, we can later pursue more complexity for be
 
 <section>
 
-## 3. Wave dissipates by the amount of water removed
+## 3. Wave energy dissipates corresponding to the amount of water lost
 
 <img src="assets/diagram3.svg" width="800"></img>
 </section>
@@ -55,7 +55,7 @@ If we can accomplish these two goals, we can later pursue more complexity for be
 ## Tearing criterion
 
 For a water parcel to detach from the crest and break up into
-spume, it needs to receive energy from wind.
+spume, it needs to receive energy from the wind.
 
 The wind does work on a sloped wave surface via aerodynamic drag.
 
@@ -123,7 +123,7 @@ $$
 
 <section>
 
-## Aerodynamic forces on a linear wave
+### Aerodynamic forces on a linear wave
 
 <img src="assets/elevation_and_force.svg" width="800"></img>
 
@@ -139,8 +139,8 @@ $$
 E_s = \sigma \Delta A_s
 $$
 
-In the simplest approach, assume that all torn volume $V_t$
-converts to spume composed of $N$ droplets of constant radius $r$:
+Surface tension energy of spume is proportional to its volume
+divided by the effective droplet radius $r$:
 
 $$
 E_s = \sigma N 4 \pi r^2
@@ -151,7 +151,7 @@ N = \frac{V_t}{\frac{4}{3} \pi r^3}
 $$
 
 $$
-E_s = \frac{3 \sigma V_t}{r}
+\Rightarrow E_s = \frac{3 \sigma V_t}{r}
 $$
 </section>
 
@@ -165,61 +165,86 @@ E_s = \frac{3 \sigma V_t}{r}
 $$
 
 For a linear wave, $V_t$ can be found analytically as a function of
-wave amplitude $a$, wave number $k$, and tearing depth $\delta$:
-
-$$
-V_t = \frac{2a}{k} \sqrt{1 - \left(1 - \frac{\delta}{a}\right)^2} - \frac{2(a - \delta)}{k} \cos^{-1}\left(1 - \frac{\delta}{a}\right)
-$$
+wave amplitude $a$, wavenumber $k$, and tear depth $\delta$:
 
 $$
 V_t = \frac{\delta}{k} \sqrt{\frac{2 \delta}{a}} + \mathcal{O}\left(\frac{\delta^2}{a^2}\right)
 $$
 
 $$
-\Rightarrow E_s \propto \frac{\sigma \delta^{\frac{3}{2}}}{a^{\frac{1}{2}} k r}
+\Rightarrow E_s = \frac{3 \sigma \delta}{kr} \sqrt{\frac{2\delta}{a}}
 $$
 </section>
 
 
 <section>
 
-### Tearing criterion (cont.), for small $ak$ and $\delta/a$, and $C_p/U$
+### Tearing criterion (cont.), for small $ak$
 
 $$
 \overline{F_d} L_t = E_s
 $$
 
+where
+
 $$
-\rho U^2 a \delta \propto \frac{\sigma \delta^{\frac{3}{2}}}{a^{\frac{1}{2}} k r}
+F_d = \frac{1}{2} \rho C_D U_c^2 ak\ \delta
 $$
+
+$$
+L_t = \frac{\lambda}{2} = \frac{\pi}{k}
+$$
+
+
+$$
+E_s = \frac{3\sigma \delta}{kr} \sqrt{\frac{2\delta}{a}} 
+$$
+</section>
+
+<section>
+
+### Tearing criterion (cont.), for small $ak$
 
 $$
 \boxed{
-\frac{\delta}{a} \propto \left( \frac{\rho U^2 a k r}{\sigma} \right)^2
+\frac{\delta}{a} = \left(\frac{\pi}{6} \frac{\rho C_D U_c^2 a k r}{\sigma} \right)^2
 }
 $$
+
+$\Rightarrow$ tear fraction is quadratic in wave steepness and quartic in wind speed.
+
+Spume droplet radius $r$ yet to be determined.
 </section>
 
 
 <section>
 
-## Surface tension energy of spume (cont.)
+### Spume radius distribution based on Veron et al. (2012)
 
-<img src="assets/surface_tension_energy.svg"></img>
+<div style="display: flex; justify-content: space-between;">
+  
+  <div style="flex: 1;">
+    <img src="assets/spume_spectrum_veron2012.svg" width="450">
+  </div>
+  
+  <div style="flex: 1;">
+    <img src="assets/Veron_etal_2012_GRL_Fig04c.png" width="450">
+    <a href="https://doi.org/10.1029/2012GL052603">Veron et al. (2012, GRL)</a>
+  </div>
+
+</div>
+
+
+$$
+\Rightarrow r_{eff} = \frac{3 \int{V(r) dr}}{\int{A(r) dr}}
+$$
+
 </section>
+
 
 <section>
 
+### Tear fraction $\delta/a$ for wind over monochromatic wave train
 
-## Tearing work and energy
-
-<img src="assets/work_and_energy_linear.svg" width="600"></img>
-</section>
-
-
-<section>
-
-## Tearing work minus energy
-
-<img src="assets/work_minus_energy_linear.svg" width="600"></img>
+<img src="assets/tear_fraction_analytical.svg" width="600"></img>
 </section>

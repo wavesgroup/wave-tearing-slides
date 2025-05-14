@@ -1,7 +1,10 @@
 <section>
 
-## What is wave tearing by wind and why is it important?
+## Welcome to... extreme winds!
+
 </section>
+
+
 
 <section>
 
@@ -24,11 +27,43 @@
 
 <section>
 
-### Steep waves, whitecaps, foam, spume, and spray
+### Steep waves, whitecaps, foam, spray, and spume
 
 <img src="assets/hurricane_isabel_noaa.png" width="600"></img>
 
 <div class="reference">Image credit: Michael Black</div>
+</section>
+
+<section>
+
+### Drag saturation (or was it decrease?)
+
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 30px;">
+  <div style="flex: 1; text-align: center;">
+    <img src="assets/Donelan_etal_2004_GRL_Fig02.png" width="400"></img>
+    <a href=" https://doi.org/10.1029/2004GL019460">Donelan et al. (2004, GRL)</a>
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <img src="assets/Powell_etal_2003_Fig03.png" width="400"></img>
+    <a href="https://doi.org/10.1038/nature01481">Powell et al. (2003, Nature)</a>
+  </div>
+</div>
+</section>
+
+
+<section>
+
+### It's 2025, and we still can't figure it out..
+
+<img src="assets/fig_cd_lab_field.png" width="600"></img>
+</section>
+
+
+<section>
+
+### It's 2025, and we still can't figure it out..
+
+<img src="assets/fig_cd_lab_field_with_means.png" width="600"></img>
 </section>
 
 
@@ -52,13 +87,14 @@ At very high wind speeds the white cap is blown off the crest in a layer of
 spray droplets.
 Under such conditions, the ocean-atmosphere interface is a foam, spray, bubble
 emulsion layer, which acts as a slip layer for the wind, rather than as a
-liquid surface.""
+liquid surface."
 </blockquote>
 
 <br>
 
 <div class="reference"><a href="https://doi.org/10.1029/2012JC007983">Holthuijsen et al. (2012, JGR)</a></div>
 </section>
+
 
 <section>
 
@@ -72,7 +108,7 @@ liquid surface.""
 
 <section>
 
-## However, it can't be only whitecaps...
+### However, it can't be only whitecaps...
 
 * Observed whitecap fractions are too low to support complete whiteout
 * Wind forces are strong enough to blow off liquid water parcels
@@ -157,7 +193,7 @@ liquid surface.""
 
 * Shear instability between wind and surface waves
 * Tops of steep wave crests detach and disperse
-* Can overlap with, but is independent from, whitecapping
+* Overlaps with whitecapping, but is independent from it
 * $\rightarrow$ Rapid dissipation of wave energy
 * $\rightarrow$ Rapid generation of spume and spray
 </section>
